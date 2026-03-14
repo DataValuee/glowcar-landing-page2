@@ -1,3 +1,7 @@
+# Explicitly set MIME type for JS modules
+AddType application/javascript .js
+AddType application/javascript .mjs
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
