@@ -1,4 +1,9 @@
-# Explicitly set MIME type for JS modules
+# Force correct MIME type for JS modules (LiteSpeed/Apache fix)
+<FilesMatch "\.(js|mjs)$">
+    ForceType application/javascript
+</FilesMatch>
+
+# Global fallback
 AddType application/javascript .js
 AddType application/javascript .mjs
 
